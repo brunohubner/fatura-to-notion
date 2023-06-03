@@ -1,7 +1,7 @@
-const data = require('../data/data.json');
+const getParsedJson = require('./getParsedJson');
 
 module.exports = function getData() {
-  return data.map(({ date, name, value }) => ({
+  return getParsedJson().map(({ date, name, value }) => ({
     Data: {
       type: 'date',
       date: {
