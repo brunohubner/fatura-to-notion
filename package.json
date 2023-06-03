@@ -4,9 +4,9 @@
   "author": "Bruno Hubner <brunohubnerdev@gmail.com>",
   "description": "",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "src"
+    "start": "src/main.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.5",
