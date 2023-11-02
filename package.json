@@ -13,11 +13,11 @@
     "test:cov": "rm -rf ./coverage && c8 node ./tests"
   },
   "dependencies": {
-    "@notionhq/client": "^2.2.5"
+    "@notionhq/client": "^2.2.13"
   },
   "devDependencies": {
     "c8": "^8.0.1",
-    "eslint": "^8.42.0",
+    "eslint": "^8.52.0",
     "eslint-config-airbnb": "^19.0.4"
   }
 }
