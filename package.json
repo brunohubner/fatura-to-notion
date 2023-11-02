@@ -5,8 +5,9 @@
   "description": "",
   "license": "MIT",
   "main": "src/main.js",
+  "private": true,
   "scripts": {
-    "start": "src/main.js",
+    "start": "node .",
     "test": "node ./tests",
     "test:watch": "node --watch ./tests",
     "test:cov": "rm -rf ./coverage && c8 node ./tests"

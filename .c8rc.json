@@ -1,6 +1,7 @@
 {
-  "include": [
-    "src/**/*"
-  ],
-  "reporter": ["html", "lcov", "text"]
+  "reporter": [
+    "html",
+    "lcov",
+    "text"
+  ]
 }
