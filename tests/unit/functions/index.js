@@ -1,3 +1,4 @@
 require('./formatDate.test');
+require('./parseLine.test');
 require('./parseTransaction.test');
-require('./getParsedJson.test');
+require('./generateNotionData.test');
