@@ -6,7 +6,8 @@
   "license": "MIT",
   "main": "src/main.js",
   "scripts": {
-    "start": "src/main.js"
+    "start": "src/main.js",
+    "test": "node ./tests"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.5",
