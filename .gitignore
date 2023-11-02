@@ -7,3 +7,5 @@ data
 
 .env
 !.tool-versions
+
+/data.txt

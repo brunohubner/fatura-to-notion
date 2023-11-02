@@ -1,7 +1,5 @@
-const getParsedJson = require('./getParsedJson');
-
-module.exports = function getData() {
-  return getParsedJson().map(({ date, name, value }) => ({
+module.exports = function generateNotionData(data) {
+  return data.map(({ date, name, value }) => ({
     Data: {
       type: 'date',
       date: {

@@ -1,9 +1,13 @@
 /* eslint-disable no-console */
 const addRecordToNotion = require('./functions/addRecordToNotion');
-const getData = require('./functions/getData');
+const generateNotionData = require('./functions/generateNotionData');
+const parseTransaction = require('./functions/parseTransaction');
 
 async function main() {
-  await Promise.all(getData().map(addRecordToNotion))
+  const transactions = parseTransaction();
+  const notionData = generateNotionData(transactions);
+
+  await Promise.all(notionData.map(addRecordToNotion))
     .then(() => console.log('>> Success!'))
     .catch((error) => console.error('>> Error!', JSON.stringify(error, null, 2)));
 }

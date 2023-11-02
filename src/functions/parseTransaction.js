@@ -1,14 +1,11 @@
-const formatDate = require('./formatDate');
+const fs = require('fs');
+const path = require('path');
+const parseLine = require('./parseLine');
 
-module.exports = function parseTransaction(line) {
-  const splited = line.trim().split(' ');
-  const date = `${splited[0]} ${splited[1]}`;
-  const name = splited.slice(2, splited.length - 1).join(' ');
-  const value = splited[splited.length - 1];
+module.exports = function parseTransaction() {
+  const file = fs
+    .readFileSync(path.resolve(__dirname, '..', '..', 'data.txt'))
+    .toString('utf-8');
 
-  return {
-    date: formatDate(date),
-    name: name.trim().replace(/"/g, ''),
-    value: parseFloat(value.replace('.', '').replace(',', '.')),
-  };
+  return file.split('\n').map(parseLine);
 };
