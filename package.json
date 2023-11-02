@@ -7,14 +7,13 @@
   "main": "src/main.js",
   "private": true,
   "scripts": {
-    "start": "node .",
+    "start": "node --env-file=.env .",
     "test": "node ./tests",
     "test:watch": "node --watch ./tests",
     "test:cov": "rm -rf ./coverage && c8 node ./tests"
   },
   "dependencies": {
-    "@notionhq/client": "^2.2.5",
-    "dotenv": "^16.1.3"
+    "@notionhq/client": "^2.2.5"
   },
   "devDependencies": {
     "c8": "^8.0.1",
