@@ -18,11 +18,11 @@ describe('parseTransaction()', () => {
     fs.readFileSync = originalReadFileSync;
 
     const expected = [
-      { date: '2023-09-27', name: 'Natan Pizzaria', value: 33.00 },
-      { date: '2023-09-28', name: 'Supermercadoanacleto', value: 24.89 },
-      { date: '2023-09-30', name: 'Pg *Ton Delivery do', value: 17.00 },
-      { date: '2023-10-01', name: 'Pag*Marianacristina', value: 63.00 },
-      { date: '2023-10-02', name: 'Solucoe*Posto de Combu', value: 50.00 },
+      { date: '2024-09-27', name: 'Natan Pizzaria', value: 33.00 },
+      { date: '2024-09-28', name: 'Supermercadoanacleto', value: 24.89 },
+      { date: '2024-09-30', name: 'Pg *Ton Delivery do', value: 17.00 },
+      { date: '2024-10-01', name: 'Pag*Marianacristina', value: 63.00 },
+      { date: '2024-10-02', name: 'Solucoe*Posto de Combu', value: 50.00 },
     ];
 
     assert.deepStrictEqual(result, expected);
