@@ -9,3 +9,5 @@ data
 !.tool-versions
 
 /data.txt
+
+faturas/*
