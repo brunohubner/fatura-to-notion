@@ -19,7 +19,7 @@ module.exports = function generateNotionData(data) {
     'Conta/Origem': {
       type: 'select',
       select: {
-        name: 'Nubank',
+        name: 'Azul',
       },
     },
     Valor: {
