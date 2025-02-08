@@ -8,7 +8,7 @@ describe('parseLine()', () => {
       {
         input: '27 SET Natan Pizzaria 33,00',
         expected: {
-          date: '2024-09-27',
+          date: '2025-09-27',
           name: 'Natan Pizzaria',
           value: 33.00,
         },
@@ -16,7 +16,7 @@ describe('parseLine()', () => {
       {
         input: '28 SET Supermercadoanacleto 24,89',
         expected: {
-          date: '2024-09-28',
+          date: '2025-09-28',
           name: 'Supermercadoanacleto',
           value: 24.89,
         },
@@ -24,7 +24,7 @@ describe('parseLine()', () => {
       {
         input: '30 SET Pg *Ton Delivery do 17,00',
         expected: {
-          date: '2024-09-30',
+          date: '2025-09-30',
           name: 'Pg *Ton Delivery do',
           value: 17.00,
         },
@@ -40,7 +40,7 @@ describe('parseLine()', () => {
   it('should handle special characters in transaction names', () => {
     const input = '01 OUT Pag*Marianacristina 63,00';
     const expected = {
-      date: '2024-10-01',
+      date: '2025-10-01',
       name: 'Pag*Marianacristina',
       value: 63.00,
     };
@@ -52,7 +52,7 @@ describe('parseLine()', () => {
   it('should handle decimal values with comma or dot', () => {
     const inputWithComma = '28 SET Sorveteria Flocos de N 4.000,00';
     const expected = {
-      date: '2024-09-28',
+      date: '2025-09-28',
       name: 'Sorveteria Flocos de N',
       value: 4000.00,
     };

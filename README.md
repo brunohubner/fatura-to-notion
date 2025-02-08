@@ -1,3 +1,3 @@
-# Nubank to Notion
+# Azul to Notion
 
-Script to send Nubank credit card bill report to a Financial Planner in Notion
+Script to send Azul credit card bill report to a Financial Planner in Notion

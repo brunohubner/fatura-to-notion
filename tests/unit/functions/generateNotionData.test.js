@@ -5,11 +5,11 @@ const generateNotionData = require('../../../src/functions/generateNotionData');
 describe('generateNotionData()', () => {
   it('should generate Notion data from given input', () => {
     const inputData = [
-      { date: '2024-09-27', name: 'Natan Pizzaria', value: 33.00 },
-      { date: '2024-09-28', name: 'Supermercadoanacleto', value: 24.89 },
-      { date: '2024-09-30', name: 'Pg *Ton Delivery do', value: 17.00 },
-      { date: '2024-10-01', name: 'Pag*Marianacristina', value: 63.00 },
-      { date: '2024-10-02', name: 'Solucoe*Posto de Combu', value: 50.00 },
+      { date: '2025-09-27', name: 'Natan Pizzaria', value: 33.00 },
+      { date: '2025-09-28', name: 'Supermercadoanacleto', value: 24.89 },
+      { date: '2025-09-30', name: 'Pg *Ton Delivery do', value: 17.00 },
+      { date: '2025-10-01', name: 'Pag*Marianacristina', value: 63.00 },
+      { date: '2025-10-02', name: 'Solucoe*Posto de Combu', value: 50.00 },
     ];
 
     const expectedOutput = [
@@ -17,7 +17,7 @@ describe('generateNotionData()', () => {
         Data: {
           type: 'date',
           date: {
-            start: '2024-09-27',
+            start: '2025-09-27',
           },
         },
         Método: {
@@ -33,7 +33,7 @@ describe('generateNotionData()', () => {
         'Conta/Origem': {
           type: 'select',
           select: {
-            name: 'Nubank',
+            name: 'Azul',
           },
         },
         Valor: {
@@ -43,7 +43,7 @@ describe('generateNotionData()', () => {
         Relevância: {
           type: 'select',
           select: {
-            name: 'Essencial',
+            name: 'Não Essencial',
           },
         },
         Despesa: {
@@ -62,7 +62,7 @@ describe('generateNotionData()', () => {
         Data: {
           type: 'date',
           date: {
-            start: '2024-09-28',
+            start: '2025-09-28',
           },
         },
         Método: {
@@ -78,7 +78,7 @@ describe('generateNotionData()', () => {
         'Conta/Origem': {
           type: 'select',
           select: {
-            name: 'Nubank',
+            name: 'Azul',
           },
         },
         Valor: {
@@ -88,7 +88,7 @@ describe('generateNotionData()', () => {
         Relevância: {
           type: 'select',
           select: {
-            name: 'Essencial',
+            name: 'Não Essencial',
           },
         },
         Despesa: {
@@ -107,7 +107,7 @@ describe('generateNotionData()', () => {
         Data: {
           type: 'date',
           date: {
-            start: '2024-09-30',
+            start: '2025-09-30',
           },
         },
         Método: {
@@ -123,7 +123,7 @@ describe('generateNotionData()', () => {
         'Conta/Origem': {
           type: 'select',
           select: {
-            name: 'Nubank',
+            name: 'Azul',
           },
         },
         Valor: {
@@ -133,7 +133,7 @@ describe('generateNotionData()', () => {
         Relevância: {
           type: 'select',
           select: {
-            name: 'Essencial',
+            name: 'Não Essencial',
           },
         },
         Despesa: {
@@ -152,7 +152,7 @@ describe('generateNotionData()', () => {
         Data: {
           type: 'date',
           date: {
-            start: '2024-10-01',
+            start: '2025-10-01',
           },
         },
         Método: {
@@ -168,7 +168,7 @@ describe('generateNotionData()', () => {
         'Conta/Origem': {
           type: 'select',
           select: {
-            name: 'Nubank',
+            name: 'Azul',
           },
         },
         Valor: {
@@ -178,7 +178,7 @@ describe('generateNotionData()', () => {
         Relevância: {
           type: 'select',
           select: {
-            name: 'Essencial',
+            name: 'Não Essencial',
           },
         },
         Despesa: {
@@ -197,7 +197,7 @@ describe('generateNotionData()', () => {
         Data: {
           type: 'date',
           date: {
-            start: '2024-10-02',
+            start: '2025-10-02',
           },
         },
         Método: {
@@ -213,7 +213,7 @@ describe('generateNotionData()', () => {
         'Conta/Origem': {
           type: 'select',
           select: {
-            name: 'Nubank',
+            name: 'Azul',
           },
         },
         Valor: {
@@ -223,7 +223,7 @@ describe('generateNotionData()', () => {
         Relevância: {
           type: 'select',
           select: {
-            name: 'Essencial',
+            name: 'Não Essencial',
           },
         },
         Despesa: {
