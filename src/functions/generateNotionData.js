@@ -29,7 +29,7 @@ module.exports = function generateNotionData(data) {
     Relevância: {
       type: 'select',
       select: {
-        name: 'Essencial',
+        name: 'Não Essencial',
       },
     },
     Despesa: {
