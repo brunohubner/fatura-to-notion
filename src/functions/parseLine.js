@@ -8,7 +8,7 @@ module.exports = function parseLine(line) {
 
   return {
     date: formatDate(date),
-    name: name.trim().replace(/"/g, ''),
+    name: name.trim().replace(/"/g, '').toUpperCase(),
     value: parseFloat(value.replace('.', '').replace(',', '.')),
   };
 };
